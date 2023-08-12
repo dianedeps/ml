@@ -1,0 +1,16 @@
+sqlite3 task2.db
+
+CREATE TABLE Test (
+	id TEXT,
+	id_user TEXT,
+	installment TEXT,
+	amount TEXT,
+	due_date TEXT,
+	payment_date TEXT,
+	status TEXT	
+);
+
+.mode csv
+.import C:/Users/Diane/git/ml/supervised/trustly/data/Task2_DataEng_SQL_Test_20230707.csv Test
+
+.quit
